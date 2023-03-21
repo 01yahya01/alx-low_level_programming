@@ -1,25 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Return: alawys 0
+ * main - prints the first 52 fibonacci numbers
+ * Return: nothing!
  */
 
 int main(void)
 {
-	int i;
-	long j = 0, k = 1, sum;
+	int i = 0;
+	long j = 1, k = 2;
 	
-	for (i = 0 ; i < 50 ; i++)
+	while (i < 50)
 	{
-		sum = j + k;
-		printf("%lu", sum);
-		j = k;
-		k = sum;
-		if (i == 49)
-			printf("\n");
-		else
-			printf(",");
+	if (i == 0)
+	printf("%ld", j);
+	else if (i == 1)
+	printf(", %ld", k);
+	else
+	{
+	k += j;
+	j = k  j;
+	printf((", %ld", k);
 	}
+	++i;
+	}
+	printf("\n");
 	return (0);
 }
