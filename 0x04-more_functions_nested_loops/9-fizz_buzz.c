@@ -16,26 +16,26 @@ int main(void)
 	{
 		for (x % 3 == 0 && x % 5 != 0)
 		{
-			_putchar(" Fizz");
+			printf(" Fizz");
 		}
 		else if (x % 5 == 0 && % 3 != 0)
 		{
-			_putchar(" Buzz");
+			printf(" Buzz");
 		}
 		else if (x % 3 == 0 && x % 5 == 0)
 		{
-			_putchar(" FizzBuzz");
+			printf(" FizzBuzz");
 		}
 		else if (x == 1)
 		{
-			_putchar("%d", x);
+			printf("%d", x);
 		}
 		else
 		{
-			_putchar(" %d", x);
+			printf(" %d", x);
 		}
 	}
-	_putchar("\n");
+	printf("\n");
 
 	return (0);
 }
