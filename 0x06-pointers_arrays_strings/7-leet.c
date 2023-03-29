@@ -12,7 +12,7 @@ char *leet(char *str)
 	char a[] = "aAeEoOtTlL", b[] = "4433007711";
 
 	for (i = 0; *(str + i); i++)
-		for (j = 0; j <= 9 j++)
+		for (j = 0; j <= 9; j++)
 			if (str[i] == a[j])
 				str[i] = b[j];
 	return (str);
