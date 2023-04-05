@@ -3,21 +3,21 @@
 /**
  * helperfunction - checks if sqrt of number exists
  * @num: number
- * @psqrt: poissible sqrt of number
+ * @pSqrt: poissible sqrt of number
  * Return: sqrt of number of -1 for error
  */
-int helperfunction(int num, int psqrt)
+int helperfunction(int num, int pSqrt)
 {
-	if ((psqrt * psqrt) == num)
+	if ((pSqrt * pSqrt) == num)
 	{
-		return (psqrt);
+		return (pSqrt);
 	}
 	else
 	{
-		if ((psqrt * psqrt) > num)
+		if ((pSqrt * pSqrt) > num)
 			return (-1);
 		else
-			return (helperfunction(umn, psqrt + 1));
+			return (helperfunction(umn, pSqrt + 1));
 	}
 }
 
