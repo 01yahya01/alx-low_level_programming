@@ -8,7 +8,7 @@
  * Return: the length of the string
  */
 
-int _putchar(int c);
+int _putchar(char c);
 void _puts(char *str)
 {
 	int i = 0;
